@@ -1,0 +1,90 @@
+
+
+body  {
+font-family : Corbel;
+font-size : 12px;
+font-weight : normal;
+color : #788588;
+background-color : #abb8bb;
+ }	
+
+.bgcolor1 {background-color : #788588}	
+.bgcolor2 {background-color : #455255}	
+.bgcolor3 {background-color : #122022}	
+
+header{
+		background: #455255;
+		width: 100%;
+		display: block;
+}
+
+.left {
+		float: left;
+		font-family: ; 
+		color: snow; 
+		font-size: 35px;
+		font-weight: normal;
+		padding-top: 10px;
+		padding-left: 2%;
+				}
+				
+.center {
+		text-align: center;
+		font-family: Vladimir Script;
+		color: #ffffff; 
+		font-size: 40px;
+		font-weight: 200;
+		padding-top: 20px;
+		padding-left: 20%;}				
+			
+.sidebar {
+		width: 20%;
+			}
+
+
+
+		
+		
+			
+section {
+		width: 48%;
+		float: left;
+		height: 80em;
+		}
+		
+
+section h1 {
+		font-size: 20em;
+		text-align: center;
+		margin-top: 100px;
+		margin-left: 100px;
+		margin-right: 100px;
+		margin-bottom: 0px;
+		
+		color: #abb8bb;
+		}
+
+#search-form {
+		text-align: center;
+		padding-top: 10px;
+		}
+.green{
+		background-color: #455255;
+		border-bottom-left-radius: 15px;
+		}
+		
+form .button {
+	font-family : Corbel;
+	font-size: 2em;
+	text-shadow: 2px 0px 2px #ffffff;
+	background: transparent;
+	color: #abb8bb;
+	border: 0;
+}
+
+#search-input {
+	border-radius: 5px;
+	background-color: #abb8bb;
+	border: 0;
+	
+}
