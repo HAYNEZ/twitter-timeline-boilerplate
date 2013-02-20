@@ -3,13 +3,15 @@
  */
 
 (function($) {
-	
+
 	//
 	// -- Private ------------------------------------------------------------------------------------------------------------------
 	//
 	
 	var tweetTemplate = '<li class="tweet">CONTENT<div class="time">TIME</div></li>'; 
+	var tweetTemplateTerm = '<li class="tweetTerm">USERPIC<span class="name">USERNAME</span><div class="tweet">CONTENT</div><div class="time">TIME</div></li>';
 	var $container = null;
+
 
 	/**
 		* load some tweets using the user_timeline API
@@ -30,6 +32,37 @@
 		});
 	};
 
+	function loadTweetsTerm(searchTerm, rows){
+		if (rows == undefined){
+			rows = '25';
+		}
+		$.ajax({
+			url: 'http://search.twitter.com/search.json?q='+searchTerm+'&rpp='+rows,
+			dataType: 'jsonp',
+			success: displayTweetsTerm
+		});
+	};
+
+	function displayTweetsTerm(data){
+
+		console.log("Whut?!", data);
+
+		var tweets = data.results;
+
+		for (var i = 0; i < tweets.length; i++){
+
+			console.log(tweets[i]);
+
+			var tweet = tweetTemplateTerm
+				.replace('USERPIC', '<img class="tweetPic" src="'+tweets[i].profile_image_url+'"/>')
+				.replace('USERNAME', tweets[i].from_user)
+				.replace('CONTENT', ify.clean(tweets[i].text))
+				.replace('TIME', timeAgo(tweets[i].created_at));
+
+			$container.append(tweet);
+		};
+	};
+
 	/**
 		* add tweets to the DOM using a simple template
 		* @param {object} data returned from Twitter API
@@ -43,6 +76,7 @@
 			$container.append(tweet); 
 		};		
 	};
+
 
 	//
 	// -- Private utility functions ------------------------------------------------------------------------------------------------------------------
@@ -163,10 +197,11 @@
 		* Initialize the timeline (public)
 		* @param {string} twitter user name (scren name with or without the @-prefix)		
 		*/	
-	$.fn.twitterTimeline = function(user) {
-		
+	$.fn.twitterTimeline = function(searchTerm, rows) {
+
 		$container = $(this);		
-		loadTweets(user);
+		//loadTweets(user);
+		loadTweetsTerm(searchTerm, rows);
 	
 	};
 	
