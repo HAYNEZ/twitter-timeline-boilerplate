@@ -1,48 +1,39 @@
 <!Doctype html>
-
 <html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<title>tweets</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="http://code.jquery.com/jquery-1.7.2.js"></script>	
+		<script src="jquery.twitter-timeline.js"></script>
+		<script src="search-bar.js"></script>
+	</head>
 
-  	<head>
-				<title>
-				tweets
-				</title>
-				<link rel="stylesheet" href="style.css" />
-				
-		</head>
-		<body>
-				<header>
-						<div class="left sidebar">
-						
-						</div>
-						
-						<div class="center">
-						tweets
-						</div>
-				</header>
-				
-				
-				<div class="left sidebar" > </div>
-				
-				
-						
-				<section class="green">
-				
-				<h1>tweets</h1>
-				
-				<form id="search-form">
-					<label for="search-input"></label>
-					<input id="search-input" type="input" />
-					<input class="button" type="submit" value="GO!" />
-				</form>
-				</section>
-				
-				
-				<aside class="sidebar right">
-				
-				</aside>
-				
-				<footer>
-				
-				</footer>
-		</body>
+	<body>
+		<header>
+			<div class="left sidebar">
+
+			</div>
+
+			<div class="center">tweets</div>
+		</header>
+
+		<section class="green">
+			<h1>tweets</h1>
+
+			<form id="search-form">
+				<label for="search-input"></label>
+				<input id="search-input" type="input" />
+				<input class="button" type="submit" value="GO!" />
+			</form>
+		</section>
+
+		<aside class="sidebar right">
+			<ul id="tweets"></ul>
+		</aside>
+
+		<footer>
+
+		</footer>
+	</body>
 </html>
