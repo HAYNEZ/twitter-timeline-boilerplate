@@ -1,0 +1,120 @@
+body  {
+font-family : Corbel;
+font-size : 12px;
+font-weight : normal;
+color : #788588;
+background-color : #abb8bb;
+display: block;
+ }	
+
+.bgcolor1 {background-color : #788588}	
+.bgcolor2 {background-color : #455255}	
+.bgcolor3 {background-color : #122022}	
+
+header{
+		
+		background: #455255;
+		width: 100%;
+		
+		border-bottom: 20px #abb8bb;
+		border-radius: 10px;
+
+}
+				
+.center {
+		text-align: center;
+		font-family: Vladimir Script;
+		color: #ffffff; 
+		font-size: 60px;
+		font-weight: 200;
+		padding-left: 20%;
+		padding-bottom: 5px;}				
+			
+#leftside {
+		float: left;
+		width: 45%;
+		}
+			
+.profile {
+		width: 90%;
+		height: 40em;
+		display: block;
+		border-radius: 10px;
+		
+}		
+			
+section {
+		margin: 30px;
+		margin-top: 50px;
+		width: 45%;
+		height: 25em;
+		display: block;
+		background-color: #455255;
+
+		}
+		
+
+h1 {
+		font-size: 10em;
+		text-align: center;
+		font-family: "Cooper Black";
+		
+		color: #abb8bb;
+		}
+
+#search-form {
+		text-align: center;
+		
+		}
+
+		
+.search {
+		background-color: #455255;
+		margin-top: -40px;
+		width: 90%;
+		border-radius: 10px;
+		}
+		
+form .button: {
+	font-family: Corbel;
+	font-size: 2em;
+	text-shadow: 2px 0px 2px #ffffff;
+	background: transparent;
+	color: #abb8bb;
+	border: 0;
+}
+
+#search-input {
+	border-radius: 5px;
+	background-color: #abb8bb;
+	border: 0;
+	
+}
+
+.sidebarright {
+	width: 49%;
+	height: 70em;
+	float: right;
+	background-color:#455255;
+	margin: 50px;
+	border-radius: 10px;
+	
+	}
+	
+ul{
+	list-style-type: none;
+	font-family: Corbel;
+	font-size: 14.7px;
+	
+	color: #abb8bb;
+	}
+	
+li{ 	border: solid;
+	border-bottom: 0px;
+	border-left: 0px;}
+	
+.tweetterm {
+	position: relative;
+	float: left;
+	}
+
