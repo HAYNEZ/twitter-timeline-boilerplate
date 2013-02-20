@@ -1,0 +1,58 @@
+<!Doctype html>
+
+<html>
+
+  	<head>
+				<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+				<title>tweets</title>
+				<link rel="stylesheet" href="style.css" />
+				<script src="http://code.jquery.com/jquery-1.7.2.js"></script>	
+				<script src="jquery.twitter-timeline.js"></script>
+				<script src="search-bar.js"></script>
+				
+		</head>
+		<body>
+				<header>
+						<div class="leftsidebar">
+						
+						</div>
+						
+						<div class="center">
+						tweetcity
+						</div>
+				</header>				
+				
+				<div id="leftside">		
+					<section class="profile">
+					
+					<img src="C:\Users\Vincent Pyle\Documents\HTW\GWP\2.Projekt/4.jpg" />					
+
+					
+					</section>
+					
+					<section class="search">
+					<h1>tweets</h1>
+					
+					<form id="search-form">
+						<div align="center">
+						<select id="dropdown">
+								<option value="empty"></option>
+								<option value="Username">Username</option>
+								<option value="Hashtag">Hashtag</option>
+						</select>
+						</div>
+						
+						<label for="search-input"></label>
+						<input id="search-input" type="input" />
+						<input class="button" type="submit" value="GO!" />
+					</form>
+					</section>
+
+				</div>	
+					
+				<aside class="sidebarright">
+					<ul id="tweets"></ul>
+				</aside>
+			
+		</body>
+</html>
